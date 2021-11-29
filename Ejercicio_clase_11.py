@@ -23,8 +23,9 @@ while True:
                                                                    #coche, puesto que sigue el orden que he marcado en
                                                                    #car_class al definir el objeto.
     lista_coches.append(coche)
+    print("Presión por defecto de las ruedas: ", wheel.presion)
 
-    coche.wheel.set_pressure(input("Dime que presión llevan las ruedas: "))
+    coche.wheel.set_pressure(input("Dime que presión quieres en las ruedas: "))
     coche.move_to(rd.random()*100, rd.random()*600) #A pos_x y pos_y le doy un valor aleatorio
     print("Posición: ", coche.get_pos()) #Le pido que me devuelva los valores de x e y
     coche.move_incr(rd.random()*10,rd.random()*60) #Incrementa los valores de pos_x y pos_y en 10 y 60 respectivamente
