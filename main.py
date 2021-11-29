@@ -1,4 +1,4 @@
-"""Ejercicio Clase 11 (main)"""
+"""Ejercicio 9"""
 import Persistencia_pickle as pp
 import car_class
 import random as rd
