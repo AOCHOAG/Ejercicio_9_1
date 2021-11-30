@@ -34,5 +34,5 @@ class Wheel:
         self.presion = presion
 
     def print_info(self):
-        return self.ancho, self.rodadura, self.diametro, self.presion
-
+        print("Dimensiones de la rueda: ", self.ancho, "/",  self.rodadura, "R", self.diametro)
+        print("Presión de las ruedas: ", self.presion, "bar")

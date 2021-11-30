@@ -39,10 +39,11 @@ print(lista_coches)
 lista_coches = pp.retrieve(ARCHIVO)
 for car in lista_coches: #Por cada objeto en la lista
     # Le doy una indicación de lo que se va a imprimir a continuación
-    print("Marca, Modelo, Combustible, Cilindrada",
+    print("Marca, Modelo, Combustible, Cilindrada ==>",
           car.marca, car.modelo, car.combustible, car.cilindrada) #Cada coche escribo su marca, modelo, combuustible,
                                                         #y cilindrada. Como estan definidos en clase Car(car_class)
-    print("Info rueda: ancho, rodadura, diametro, presión => ", car.wheel.print_info())
+    print(car.wheel.print_info())
+    #print("Info rueda: ancho, rodadura, diametro, presión => ", car.wheel.print_info())
     print("Posición: ", car.get_pos(), "\n") #Le pido la posición x e y que habia obtenido previamente de cada
                                              #Objeto correspondiente a cada coche
 
